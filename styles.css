@@ -385,6 +385,27 @@
 .social-links { display:flex; gap:1rem; margin-top:1rem; }
 .social-links a { text-decoration:none; color:#23263a; display:inline-flex; align-items:center; gap:0.5rem; }
 .site-footer { text-align:center; padding:2rem 0; }
+
+.social-btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  border-radius:8px;
+  background: #f3f4f6;
+  color: #23263a;
+  transition: transform 0.16s ease, background 0.16s ease;
+}
+.social-btn:hover { transform: translateY(-3px); background: #00e6d0; color: #07121a; }
+.social-links { justify-content:center; }
+
+/* Mobile typography tweaks */
+@media (max-width:600px) {
+  .hero-name { font-size:2rem; }
+  .hero-intro { font-size:1rem; }
+  .social-btn { width:36px; height:36px; }
+}
 /* Resume & Credentials Section */
 .resume-summary {
   margin-bottom: 1.2rem;
