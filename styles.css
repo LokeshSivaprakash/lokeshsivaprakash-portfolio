@@ -401,6 +401,32 @@
 .social-links { justify-content:center; }
 
 /* Mobile typography tweaks */
+/* Accessibility helpers */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  padding: 0.6rem 0.8rem;
+  background: #00e6d0;
+  color: #072029;
+  border-radius: 6px;
+  z-index: 9999;
+}
+
+/* Stronger focus outlines for keyboard users */
+a:focus, button:focus, .social-btn:focus {
+  outline: 3px solid #7f53ac;
+  outline-offset: 3px;
+}
 @media (max-width:600px) {
   .hero-name { font-size:2rem; }
   .hero-intro { font-size:1rem; }
