@@ -8,7 +8,8 @@
   <meta name="description" content="Lokesh Sivaprakash Portfolio: Internal Audit, Cybersecurity, and Technology Projects.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="styles.css">
   <meta property="og:title" content="Lokesh Sivaprakash Portfolio">
   <meta property="og:description" content="Lokesh Sivaprakash Portfolio: Internal Audit, Cybersecurity, and Technology Projects.">
@@ -57,7 +58,7 @@
           </div>
         </div>
         <div class="hero-right">
-          <img src="https://ui-avatars.com/api/?name=Lokesh+Sivaprakash&background=00e6d0&color=23263a&size=360&rounded=true" alt="Lokesh Sivaprakash avatar" class="hero-avatar" />
+          <img src="https://ui-avatars.com/api/?name=Lokesh+Sivaprakash&background=00e6d0&color=23263a&size=360&rounded=true" alt="Lokesh Sivaprakash avatar" class="hero-avatar" width="360" height="360" fetchpriority="high" decoding="async" />
         </div>
       </div>
     </section>
@@ -256,7 +257,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </main>
 
 <!-- Chatbot Widget (Chatbase demo) -->
