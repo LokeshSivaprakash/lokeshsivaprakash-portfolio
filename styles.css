@@ -104,7 +104,8 @@ h3 { font-size: 1rem; }
 }
 .btn.primary { background: linear-gradient(90deg, var(--accent-1), var(--accent-2)); color: var(--brand-dark); border: none; }
 .btn.secondary { background: transparent; color: var(--text); border: 1px solid rgba(255,255,255,0.06); }
-.btn.small { padding: 0.45rem 0.8rem; font-size: 0.95rem; }
+.btn.small { padding: 0.45rem 0.8rem; font-size: 0.95rem; background: var(--card); color: var(--text); border: 1px solid rgba(255,255,255,0.1); }
+.btn.small:hover { background: rgba(255,255,255,0.05); transform: translateY(-2px); }
 
 /* Logo and icon sizing */
 .logo-icon, .logo { border-radius: calc(var(--radius) - 2px); }
@@ -129,10 +130,34 @@ a, button { transition: all 160ms ease; }
 
 /* Tweak buttons */
 .btn { display:inline-flex; align-items:center; justify-content:center; gap:0.5rem; padding:0.65rem 1rem; border-radius:10px; font-weight:600; text-decoration:none; }
-.btn.primary { background: linear-gradient(90deg,var(--brand-1), var(--brand-2)); color: #07121a; box-shadow: 0 8px 24px rgba(127,83,172,0.12); }
-.btn.primary:hover { transform: translateY(-3px); filter:brightness(1.02); }
+.btn.primary { 
+  background: linear-gradient(90deg,var(--brand-1), var(--brand-2)); 
+  color: #000; 
+  box-shadow: 0 8px 24px rgba(127,83,172,0.25); 
+  border: none; 
+  font-weight: 700; 
+}
+.btn.primary:hover { 
+  transform: translateY(-3px); 
+  filter: brightness(1.05); 
+  box-shadow: 0 12px 32px rgba(127,83,172,0.35); 
+}
 .btn.secondary { background: transparent; color: #fff; border: 1px solid rgba(11,18,32,0.08); background: #23263a; }
 .btn.secondary:hover { transform: translateY(-2px); }
+
+/* Enhanced styling for small buttons (project reports) */
+.btn.small { 
+  background: rgba(127, 83, 172, 0.1); 
+  color: var(--text); 
+  border: 1px solid rgba(127, 83, 172, 0.3); 
+  padding: 0.45rem 0.8rem; 
+  font-size: 0.95rem; 
+}
+.btn.small:hover { 
+  background: rgba(127, 83, 172, 0.2); 
+  border-color: rgba(127, 83, 172, 0.5); 
+  transform: translateY(-2px); 
+}
 
 /* Header/nav */
 .site-header { background: transparent; position: sticky; top:0; z-index:50; backdrop-filter: blur(6px); padding:0.6rem 0; }
