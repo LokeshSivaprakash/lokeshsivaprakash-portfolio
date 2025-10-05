@@ -1059,3 +1059,37 @@ a:focus, button:focus, .social-btn:focus {
     color: var(--muted);
     line-height: 1.4;
 }
+
+/* Education section styling */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.edu-card {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.edu-card strong {
+    color: var(--text);
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.edu-meta {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+
+.edu-date {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
