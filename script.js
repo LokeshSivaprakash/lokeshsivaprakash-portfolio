@@ -92,3 +92,10 @@ document.addEventListener('focusout', function(e) {
 	}
 });
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Small entrance for hero and cards in case revealOnScroll didn't catch initial view
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function(){
+    document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
+  }, 220);
+});
