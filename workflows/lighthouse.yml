@@ -1,0 +1,35 @@
+name: Lighthouse Audit
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Lighthouse
+        run: |
+          npm install -g lighthouse@latest
+
+      - name: Run Lighthouse (accessibility,performance,seo,best-practices)
+        env:
+          URL: https://lokeshsivaprakash.github.io/lokeshsivaprakash-portfolio/
+        run: |
+          mkdir -p ./lighthouse
+          npx -y lighthouse "$URL" --output=json --output=html --output-path=./lighthouse/report --chrome-flags="--headless --no-sandbox" --only-categories=accessibility,performance,seo,best-practices || true
+
+      - name: Upload Lighthouse reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-report
+          path: ./lighthouse
