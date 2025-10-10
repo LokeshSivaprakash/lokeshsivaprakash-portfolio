@@ -334,25 +334,6 @@ section { padding: 3.25rem 0; }
   margin-bottom: 1.2rem;
   margin-top: 1.5rem;
 }
-.core-skills { 
-  margin-top: 2rem; 
-  padding: 1.5rem; 
-  background: rgba(0,230,208,0.05); 
-  border-radius: 8px; 
-  border-left: 3px solid var(--accent-1); 
-}
-.core-skills h3 { 
-  color: var(--accent-1); 
-  font-size: 1.15rem; 
-  margin-bottom: 0.8rem; 
-  font-weight: 600; 
-}
-.core-skills p { 
-  color: var(--text); 
-  font-size: 1rem; 
-  line-height: 1.8; 
-  margin-bottom: 0; 
-}
 
 /* Tighten footer */
 .site-footer { padding: 2rem 0; background: transparent; border-top:1px solid rgba(255,255,255,0.04); }
