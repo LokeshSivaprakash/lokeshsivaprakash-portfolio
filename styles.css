@@ -166,17 +166,18 @@ a, button { transition: all 160ms ease; }
 
 /* Hero polish */
 .hero-sample { padding: 5rem 0 3rem 0; background: var(--bg); border-radius: 0; box-shadow: none; }
-.hero-name { font-size:4.2rem; font-weight:800; letter-spacing: -1px; text-transform:uppercase; }
+.hero-name { font-size:3rem; font-weight:700; letter-spacing: -0.5px; text-transform: none; }
 .name-em { background: none; color: var(--accent); }
-.hero-intro { font-size:1.05rem; color:var(--muted); }
+.hero-intro { font-size:1.05rem; color:var(--muted); line-height: 1.6; }
 .hero-avatar { border-radius: 14px; }
 .hero-right .hero-avatar{ box-shadow: 0 24px 60px rgba(11,18,32,0.12); }
 .hero-actions .btn.primary { padding: 1rem 1.4rem; font-size:1.05rem; border-radius:12px; }
 
 /* Concept-style hero */
 .hero-concept { padding: 6rem 0; text-align: center; background: var(--bg); }
-.hero-concept .hero-name { font-size:4.6rem; line-height:1; margin-bottom:0.6rem; }
-.hero-concept .hero-intro { font-size:1.15rem; color:var(--muted); max-width:64ch; margin:0.6rem auto 1.2rem auto; }
+.hero-concept .hero-name { font-size:3rem; line-height:1.2; margin-bottom:0.8rem; font-weight:700; text-transform: none; }
+.hero-concept .hero-tagline { font-size:1.1rem; color:var(--accent-1); font-weight:500; margin:0 auto 1rem auto; max-width:70ch; }
+.hero-concept .hero-intro { font-size:1.05rem; color:var(--muted); max-width:70ch; margin:0 auto 1.5rem auto; line-height: 1.7; }
 .hero-concept .hero-actions { display:flex; gap:1rem; justify-content:center; }
 
 /* Banner / hero image area */
