@@ -175,9 +175,10 @@ a, button { transition: all 160ms ease; }
 
 /* Concept-style hero */
 .hero-concept { padding: 6rem 0; text-align: center; background: var(--bg); }
-.hero-concept .hero-name { font-size:3rem; line-height:1.2; margin-bottom:0.8rem; font-weight:700; text-transform: none; }
-.hero-concept .hero-tagline { font-size:1.1rem; color:var(--accent-1); font-weight:500; margin:0 auto 1rem auto; max-width:70ch; }
-.hero-concept .hero-intro { font-size:1.05rem; color:var(--muted); max-width:70ch; margin:0 auto 1.5rem auto; line-height: 1.7; }
+.hero-concept .hero-text { max-width: 800px; margin: 0 auto; }
+.hero-concept .hero-name { font-size:2.2rem; line-height:1.3; margin-bottom:1rem; font-weight:600; text-transform: none; text-align: center; }
+.hero-concept .hero-tagline { font-size:1.1rem; color:var(--accent-1); font-weight:500; margin:0 auto 1.2rem auto; text-align: center; line-height: 1.5; }
+.hero-concept .hero-intro { font-size:1.05rem; color:var(--muted); margin:0 auto 1.8rem auto; line-height: 1.8; text-align: center; }
 .hero-concept .hero-actions { display:flex; gap:1rem; justify-content:center; }
 
 /* Banner / hero image area */
