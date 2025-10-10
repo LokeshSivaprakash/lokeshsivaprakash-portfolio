@@ -1598,3 +1598,47 @@ a:focus, button:focus, .social-btn:focus {
   background: rgba(0,0,0,0.03);
   border: 1px solid rgba(0,0,0,0.08);
 }
+
+/* Light mode overrides for forced dark sections */
+[data-theme="light"] section.projects.container.section-white,
+[data-theme="light"] section#projects,
+[data-theme="light"] section.skills.container {
+  background: var(--card) !important;
+  color: var(--text) !important;
+}
+
+[data-theme="light"] section.projects .project-card,
+[data-theme="light"] section.skills .skill-card {
+  background: rgba(0,0,0,0.02) !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+}
+
+[data-theme="light"] section.projects .project-content h3,
+[data-theme="light"] section.skills .skill-content strong {
+  color: var(--text) !important;
+}
+
+[data-theme="light"] section.projects .project-content p,
+[data-theme="light"] section.skills .skill-content p,
+[data-theme="light"] section.projects .project-meta {
+  color: var(--muted) !important;
+}
+
+[data-theme="light"] section.projects .project-card:hover,
+[data-theme="light"] section.skills .skill-card:hover {
+  background: rgba(0,184,169,0.08) !important;
+  border-color: var(--accent-1) !important;
+  box-shadow: 0 6px 24px rgba(0,184,169,0.15) !important;
+}
+
+[data-theme="light"] .cert-badge {
+  background: linear-gradient(135deg, rgba(0,184,169,0.2), rgba(107,70,193,0.2));
+  border-color: rgba(0,184,169,0.4);
+  color: var(--text);
+}
+
+[data-theme="light"] .report-thumb,
+[data-theme="light"] .project-content .report-thumb {
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  color: #ffffff !important;
+}
