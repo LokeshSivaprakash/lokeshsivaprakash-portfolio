@@ -236,7 +236,7 @@ a, button { transition: all 160ms ease; }
 .hero-concept .hero-name {
   font-size: 3.5rem;
   line-height: 1.1;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: 700;
   text-align: center;
 }
@@ -247,6 +247,15 @@ a, button { transition: all 160ms ease; }
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-align: center;
+}
+
+.hero-concept .hero-tagline {
+  font-size: 1.2rem;
+  color: var(--accent-1);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
 .hero-concept .hero-subtitle {
@@ -1505,4 +1514,87 @@ a:focus, button:focus, .social-btn:focus {
   color: var(--accent-1);
   font-size: 0.95rem;
   font-weight: 600;
+}
+
+/* Light Mode Theme */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --card: #f8f9fa;
+  --text: #1a1a1a;
+  --muted: #5a6674;
+  --accent-1: #00b8a9;
+  --accent-2: #6b46c1;
+  --brand-dark: #ffffff;
+  --logo-dark: #e5e7eb;
+}
+
+[data-theme="light"] body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+[data-theme="light"] .site-header {
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+[data-theme="light"] .hero-concept {
+  background: linear-gradient(135deg, rgba(0,184,169,0.05) 0%, rgba(107,70,193,0.05) 100%);
+}
+
+[data-theme="light"] .about-me,
+[data-theme="light"] .projects,
+[data-theme="light"] .skills,
+[data-theme="light"] .experience,
+[data-theme="light"] .education,
+[data-theme="light"] .resume,
+[data-theme="light"] .contact {
+  background: var(--card);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .project-card,
+[data-theme="light"] .timeline-content,
+[data-theme="light"] .edu-card,
+[data-theme="light"] .contact-protiviti-item {
+  background: rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .project-card:hover,
+[data-theme="light"] .timeline-content:hover,
+[data-theme="light"] .edu-card:hover {
+  background: rgba(0,184,169,0.08);
+  border-color: var(--accent-1);
+  box-shadow: 0 6px 24px rgba(0,184,169,0.15);
+}
+
+[data-theme="light"] .skill-bar {
+  background: rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .btn.primary {
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  color: #ffffff;
+}
+
+[data-theme="light"] .btn.secondary {
+  border-color: rgba(0,184,169,0.4);
+  color: var(--text);
+}
+
+[data-theme="light"] .btn.secondary:hover {
+  background: rgba(0,184,169,0.1);
+  border-color: var(--accent-1);
+}
+
+[data-theme="light"] .timeline-dot {
+  border-color: var(--bg);
+}
+
+[data-theme="light"] .resume-protiviti-left,
+[data-theme="light"] .resume-protiviti-right {
+  background: rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.08);
 }
