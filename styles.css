@@ -1440,6 +1440,13 @@ a:focus, button:focus, .social-btn:focus {
   font-size: 0.9rem;
   flex-shrink: 0;
 }
+.cert-date {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: var(--accent-1);
+  font-weight: 600;
+  opacity: 0.9;
+}
 
 /* Trigger animation on scroll */
 .skill-animate .skill-bar span { 
@@ -1677,6 +1684,9 @@ a:focus, button:focus, .social-btn:focus {
 [data-theme="light"] .cert-check {
   background: var(--accent-1);
   color: #ffffff;
+}
+[data-theme="light"] .cert-date {
+  color: var(--accent-1);
 }
 
 [data-theme="light"] .report-thumb,
