@@ -36,10 +36,11 @@
         <span class="logo-icon">LS</span>
       </a>
       <nav class="site-nav main-nav" aria-label="Primary">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#resume">Credentials</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
       <!-- Theme toggle -->
@@ -50,52 +51,43 @@
   </header>
 
   <main>
-    <section class="hero hero-concept container section-white" id="about">
+    <section class="hero hero-concept container section-white" id="home">
       <div class="hero-text">
-        <h1 class="hero-name">Lokesh Sivaprakash</h1>
-        <div class="hero-underline"></div>
-        <p class="hero-tagline">Internal Audit & Cybersecurity Professional | Risk Management | Data Analytics | Compliance</p>
-        <p class="hero-intro">Graduate Student in Information Systems at Cleveland State University with over 2 years of software development experience, focusing on internal audit, technology risk, and cybersecurity. Certified in (ISC)² CC and Google Cybersecurity Professional, I combine analytical and technical skills to strengthen enterprise controls and enhance compliance through data-driven insights.</p>
+        <p class="hero-greeting">Hello, my name is</p>
+        <h1 class="hero-name gradient-text">Lokesh Sivaprakash</h1>
+        <h2 class="hero-subtitle">Internal Audit & Cybersecurity Professional</h2>
+        <p class="hero-intro">A dedicated professional with expertise in internal audit, technology risk assessment, and cybersecurity operations. I specialize in implementing robust control frameworks, conducting comprehensive audits, and enhancing organizational security postures through data-driven insights and compliance excellence.</p>
         <div class="hero-actions">
-          <a href="#projects" class="btn secondary">View Projects</a>
-          <a href="assets/Lokesh_Resume.pdf" class="btn secondary" download>Download Resume</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+          <a href="#contact" class="btn primary">Contact me via form</a>
+          <a href="https://www.linkedin.com/in/lokesh-sivaprakash" target="_blank" class="btn secondary">Visit my LinkedIn profile</a>
         </div>
       </div>
     </section>
-    <!-- Whitepaper section removed per request -->
     <!-- About Me: inspired structure and tone (original text) -->
-      <section class="about-me container" id="about" aria-labelledby="about-title">
-    <div class="about-content">
-      <div class="about-text">
-        <h2 id="about-title">01. About Me</h2>
+    <section class="about-me container" id="about" aria-labelledby="about-title">
+      <h2 id="about-title"><span class="section-number">01.</span>About Me</h2>
       <div class="about-grid">
-        <p>I'm a cybersecurity and information systems professional passionate about strengthening enterprise risk management and internal controls. With over 2 years of experience as a Software Engineer at Capgemini, I've developed expertise in application security, vulnerability management, and automation — blending technical precision with a deep understanding of compliance and audit frameworks.</p>
+        <div class="about-content">
+          <p>I'm a cybersecurity and information systems professional passionate about strengthening enterprise risk management and internal controls. With over 2 years of experience as a Software Engineer at Capgemini, I've developed expertise in application security, vulnerability management, and automation — blending technical precision with a deep understanding of compliance and audit frameworks.</p>
 
-        <p>Currently pursuing my Master of Information Systems at Cleveland State University, I focus on internal audit, technology risk, and data analytics, applying frameworks like NIST, ISO 27001, and PCI DSS to evaluate and enhance control effectiveness.</p>
+          <p>Currently pursuing my Master of Information Systems at Cleveland State University, I focus on internal audit, technology risk, and data analytics, applying frameworks like NIST, ISO 27001, and PCI DSS to evaluate and enhance control effectiveness.</p>
 
-        <p>I hold the (ISC)² Certified in Cybersecurity (CC) and Google Cybersecurity Professional Certificate, and I'm an active member of the Institute of Internal Auditors (IIA). My goal is to bridge the gap between cybersecurity operations and audit assurance through data-driven insights and process optimization.</p>
-
-        <div class="core-skills">
-          <h3>Core Skills</h3>
-          <p>Risk Assessment • Internal Controls • Data Analytics • Compliance (NIST, ISO 27001, PCI DSS) • SIEM (Splunk, QRadar) • Vulnerability Management • Incident Response • Cloud Security • Audit Documentation</p>
+          <p>I hold the (ISC)² Certified in Cybersecurity (CC) and Google Cybersecurity Professional Certificate, and I'm an active member of the Institute of Internal Auditors (IIA). My goal is to bridge the gap between cybersecurity operations and audit assurance through data-driven insights and process optimization.</p>
+        </div>
+        <div class="about-skills">
+          <div class="skill-badge">Risk Assessment</div>
+          <div class="skill-badge">Internal Controls</div>
+          <div class="skill-badge">Data Analytics</div>
+          <div class="skill-badge">Compliance</div>
+          <div class="skill-badge">SIEM Operations</div>
         </div>
       </div>
     </section>
 
-    <section class="testimonials container" id="testimonials" aria-labelledby="testimonials-title">
-      <h2 id="testimonials-title">Testimonials</h2>
-      <div class="testimonials-carousel">
-        <div class="testimonial-card">
-          <div class="testimonial-quote">“Lokesh brings a rare blend of technical depth and audit discipline. His reports are clear, actionable, and always map to real business risk.”</div>
-          <div class="testimonial-author">— Former Manager, IT Audit</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-quote">“Excellent at translating cybersecurity findings into practical recommendations. Lokesh’s work is always thorough and professional.”</div>
-          <div class="testimonial-author">— Peer Auditor</div>
-        </div>
-      </div>
-    </section>
+        </section>
+
+    <section class="projects container section-white" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title"><span class="section-number">02.</span>Projects</h2>
 
   <section class="projects container section-white" id="projects" aria-labelledby="projects-title">
       <h2 id="projects-title">My Audit & Cybersecurity Projects</h2>
@@ -146,33 +138,119 @@
     </section>
 
     <section class="skills container" id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">02. Technical Skills</h2>
-      <div class="skills-resume">
-        <div class="skill-category">
-          <h3>Security Tools</h3>
-          <p>Splunk, QRadar, Palo Alto XSOAR, Splunk Phantom, Darktrace, IDS/IPS, SonarQube</p>
+      <h2 id="skills-title"><span class="section-number">03.</span>Skills</h2>
+      
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Audit & Compliance Expertise</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Internal Audit & ITGC</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 90%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Risk Assessment</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 85%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Compliance Frameworks (NIST, ISO 27001, PCI DSS)</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 85%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Vulnerability Management</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 80%"></span></div>
+          </div>
         </div>
-        <div class="skill-category">
-          <h3>Programming/Scripting & Analytics</h3>
-          <p>Python, PowerShell, Bash, SQL/MySQL, Excel, Tableau, Power BI, Python</p>
+
+        <div class="skill-group">
+          <h3>Security Tools & SIEM</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Splunk & Log Analysis</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 90%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>QRadar</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 85%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>SOAR Platforms (XSOAR, Phantom)</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 75%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>IDS/IPS & Network Security</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 80%"></span></div>
+          </div>
         </div>
-        <div class="skill-category">
-          <h3>Security Operations</h3>
-          <p>Incident Response, Log & Network Traffic Analysis, Threat Monitoring, Vulnerability Assessment, Malware Analysis</p>
+
+        <div class="skill-group">
+          <h3>Programming & Analytics</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Python</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 85%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>SQL/MySQL</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 85%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>PowerShell & Bash</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 80%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Data Visualization (Tableau, Power BI)</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar"><span style="--skill-val: 75%"></span></div>
+          </div>
         </div>
-        <div class="skill-category">
-          <h3>Compliance/Framework</h3>
-          <p>GDPR, NIST Framework, HIPAA, ISO 27001, PCI DSS</p>
-        </div>
-        <div class="skill-category">
-          <h3>IT & Cloud Knowledge</h3>
-          <p>Java, SWT, REST APIs, Spring Boot, MongoDB, Kubernetes, Docker, OpenShift, Jenkins</p>
+
+        <div class="skill-group">
+          <h3>Certifications</h3>
+          <div class="cert-badges">
+            <div class="cert-badge">(ISC)² CC</div>
+            <div class="cert-badge">CompTIA CySA+</div>
+            <div class="cert-badge">Google Cybersecurity</div>
+            <div class="cert-badge">CISA (Target 2026)</div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="experience container" id="experience" aria-labelledby="experience-title">
-      <h2 id="experience-title">03. Experience</h2>
+      <h2 id="experience-title"><span class="section-number">04.</span>Experience</h2>
       <div class="experience-list">
         <div class="experience-item">
           <h3 class="experience-role">Image Specialist</h3>
@@ -196,7 +274,7 @@
     </section>
 
     <section class="education container" id="education" aria-labelledby="education-title">
-      <h2 id="education-title">04. Education</h2>
+      <h2 id="education-title"><span class="section-number">05.</span>Education</h2>
       <div class="education-grid">
         <div class="edu-card">
           <strong>Master of Information Systems (MIS)</strong>
@@ -212,7 +290,7 @@
     </section>
 
   <section class="resume container" id="resume" aria-labelledby="resume-title">
-      <h2 id="resume-title">05. Resume & Credentials</h2>
+      <h2 id="resume-title"><span class="section-number">06.</span>Resume & Credentials</h2>
       <div class="resume-protiviti-card">
         <div class="resume-protiviti-left">
           <div class="resume-protiviti-title">Resume</div>
@@ -234,7 +312,8 @@
 
   <section class="contact container" id="contact" aria-labelledby="contact-title">
   <div class="contact-protiviti-card">
-    <h2 id="contact-title">06. Contact Me</h2>
+    <h2 id="contact-title"><span class="section-number">07.</span>Contact Me</h2>
+    <p class="contact-intro">I'm currently open to new opportunities in internal audit, cybersecurity, and risk management. Whether you have a question or just want to connect, I'll do my best to get back to you!</p>
     <div class="contact-protiviti-list">
       <div class="contact-protiviti-item">
         <span class="contact-icon">✉️</span>

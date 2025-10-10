@@ -6,20 +6,26 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (yearSpan) {
 		yearSpan.textContent = new Date().getFullYear();
 	}
-});
 	
-	// Animate skill bars: read inline widths and set CSS variables then add class
-	var skillEls = document.querySelectorAll('.skill-list li');
-	skillEls.forEach(function(li) {
-		var span = li.querySelector('.skill-bar span');
-		if (span) {
-			var w = span.style.width || '70%';
-			// store as custom property for animated selector
-			li.style.setProperty('--skill-val', w);
-		}
-	});
-	// add animate class after a tick
-	setTimeout(function(){ document.body.classList.add('skill-animate'); }, 120);
+	// Animate skill bars on scroll
+	const observeSkills = () => {
+		const skillsSection = document.querySelector('.skills');
+		if (!skillsSection) return;
+		
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					skillsSection.classList.add('skill-animate');
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.2 });
+		
+		observer.observe(skillsSection);
+	};
+	
+	observeSkills();
+});
 
 // 2. Smooth Scroll for Navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
